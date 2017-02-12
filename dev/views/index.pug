@@ -1,0 +1,15 @@
+doctype
+html(lang="es")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Login Site
+    link(rel="stylesheet", href="css/styles.css")
+  body
+    .wrapper
+      h1.logo C H I D E M
+      form.form
+        input.form__input(type="text", name="username", require, placeholder="Username")
+        input.form__input(type="password", name="password", require, placeholder="Password")
+        input.form__input.form__btn(type="submit", value="Logn In")
+        a.form__link(href="#") Register for New Account
