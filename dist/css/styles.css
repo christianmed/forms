@@ -28,18 +28,19 @@ img {
 .wrapper {
   width: 100%;
   height: 100vh;
-  overflow: hidden;
-  background: #292d3e; }
+  background: #292d3e;
+  overflow: hidden; }
 
-.logo {
-  width: 100%;
+.header {
   height: 50vh;
-  line-height: 30vh;
   background: #f3755a;
-  text-align: center;
-  font-weight: 600;
-  font-size: 4em;
-  text-shadow: 0 5px 0 rgba(51, 51, 51, 0.25); }
+  text-align: center; }
+  .header__logo {
+    font-size: 4em;
+    font-weight: 600;
+    line-height: 30vh;
+    color: #e9d59f;
+    text-shadow: 0 6px 0 rgba(51, 51, 51, 0.25); }
 
 .form {
   width: 350px;
@@ -53,23 +54,25 @@ img {
     display: block;
     width: 80%;
     height: 50px;
-    margin: 25px auto;
     border: none;
     border-radius: 10px;
     outline: none;
+    margin: 25px auto;
     font-size: 1em; }
-    .form__input:nth-child(1), .form__input:nth-child(2) {
+    .form__input:not(:nth-child(3)) {
       padding-left: 1em; }
-  .form__btn {
-    background: #292d3e;
-    color: #e9d59f;
-    font-size: 1.25em;
-    text-transform: uppercase;
-    font-weight: 600;
-    cursor: pointer; }
-    .form__btn:hover {
-      background: #1f222f; }
+    .form__input:nth-child(3) {
+      background: #292d3e;
+      color: #e9d59f;
+      font-size: 1.2em;
+      font-weight: 600;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: all .2s ease; }
+      .form__input:nth-child(3):hover {
+        background: #e9d59f;
+        color: #292d3e; }
   .form__link {
     display: block;
-    margin-top: 75px;
+    margin-top: 50px;
     color: #e9d59f; }
